@@ -30,7 +30,4 @@ public class Account {
 
     @Column(name = "BALANCE", nullable = false)
     private Double balance;
-
-    @Column(name = "ACCOUNT_TYPE")
-    private String accountType;
 }

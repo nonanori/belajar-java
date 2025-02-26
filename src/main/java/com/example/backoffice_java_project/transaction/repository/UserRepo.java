@@ -7,5 +7,4 @@ import com.example.backoffice_java_project.transaction.entity.User;
 
 @Repository
 public interface UserRepo extends JpaRepository<User, Long>{
-    
 }

@@ -38,4 +38,11 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
+    public String checkUserById(Long id) {
+        if (userRepository.existsById(id)) {
+            return "User dengan ID " + id + " ditemukan";
+        } else {
+            return "User dengan ID " + id + " tidak ada";
+        }
+    }
 }
